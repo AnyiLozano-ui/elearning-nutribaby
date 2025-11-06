@@ -128,9 +128,43 @@ const menu = [
 			},
 		],
 	},
+
 	{
 		label: 'Evaluación interactiva: módulo 4',
 		link: '/Nutribabay-44.html',
+	},
+	{
+		label: 'Módulo 5. Microbiota y sus aliados: probióticos y prebióticos',
+		children: [
+			{
+				label: 'Probióticos, prebióticos y su relación con la leche materna y las fórmulas infantiles',
+				link: '/Nutribabay-57.html',
+			},
+			{
+				label: '¿Qué son los probióticos?',
+				link: '/Nutribabay-58.html',
+			},
+			{
+				label: 'Lactobacillus y Bifidobacterium: beneficios y seguridad',
+				link: '/Nutribabay-59.html',
+			},
+			{
+				label: '¿Qué son los prebióticos?',
+				link: '/Nutribabay-60.html',
+			},
+			{
+				label: 'GOS y “factor bífido”: beneficios clínicos',
+				link: '/Nutribabay-61.html',
+			},
+			{
+				label: 'Combinación sinbiótica en NutriBaby® (probióticos+prebióticos)',
+				link: '/Nutribabay-62.html',
+			},
+		],
+	},
+	{
+		label: 'Evaluación interactiva: módulo 5',
+		link: '/Nutribabay-63.html',
 	},
 ]
 
