@@ -226,6 +226,11 @@ const menu = [
 			},
 		],
 	},
+
+	{
+		label: 'Evaluación interactiva: módulo 6',
+		link: '/Nutribabay-88.html',
+	},
 ]
 
 let active = null

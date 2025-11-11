@@ -30,15 +30,15 @@
 					type="audio/mpeg" />
 			</audio>
 
-			<audio id="correct">
+			<audio id="correcto">
 				<source
-					src="https://eml.com.co/elearning_nutri_baby/button.mp3"
+					src="https://eml.com.co/elearning_nutri_baby/sonido-correcto-331225.mp3"
 					type="audio/mpeg" />
 			</audio>
 
 			<audio id="error">
 				<source
-					src="https://eml.com.co/elearning_nutri_baby/button.mp3"
+					src="https://eml.com.co/elearning_nutri_baby/incorrecta.mp3"
 					type="audio/mpeg" />
 			</audio>
 
@@ -126,14 +126,20 @@
 		<script src="./js/module-6/questions.js"></script>
 
 		<!-- Script Sonido-->
-		<script>
+		<script>   
 			const enlace = document.querySelector('.boton')
-			const sonido = document.getElementById('sonido-clic')
+			const sonidoClick = document.getElementById('sonido-clic')
 
 			enlace.addEventListener('click', function (event) {
 				event.preventDefault()
-				sonido.currentTime = 0
-				sonido.play()
+
+				// Reproduce sonido de clic
+				sonidoClick.currentTime = 0
+				sonidoClick.play()
+
+				// Reproduce sonido de "correct"
+				enlace.currentTime = 0
+				enlace.play()
 
 				// Espera un poco antes de redirigir
 				setTimeout(() => {

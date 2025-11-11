@@ -196,8 +196,8 @@ body {
 	height: 9.4%;
 	left: 4.8%;
 	top: 42.6%;
-	background: #ff000059;
 	border-radius: 16px;
+	cursor: pointer;
 }
 
 .resp-mal2 {
@@ -206,7 +206,7 @@ body {
 	height: 9.4%;
 	left: 4.8%;
 	top: 65.3%;
-	background: #ff000059;
+	cursor: pointer;
 	border-radius: 16px;
 }
 
@@ -216,7 +216,7 @@ body {
 	height: 9.4%;
 	left: 4.8%;
 	top: 77.3%;
-	background: #ff000059;
+	cursor: pointer;
 	border-radius: 16px;
 }
 
@@ -227,7 +227,7 @@ body {
 	height: 9.4%;
 	left: 4.8%;
 	top: 54%;
-	background: #46afaf6e;
+	cursor: pointer;
 	border-radius: 16px;
 }
 

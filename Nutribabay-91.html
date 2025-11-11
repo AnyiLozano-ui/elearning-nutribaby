@@ -28,7 +28,7 @@
 			</div>
 
 			<!-- menu -->
-			<a href="./Nutribabay-74.html" class="boton">
+			<a href="./index.html" class="boton">
 			</a>
 
 			<!-- Audio -->
@@ -172,8 +172,11 @@
 			const responses = JSON.parse(localStorage.getItem('responses'))
 			$('.quantity').text(responses.filter((item) => item === 'Check').length)
 			if (responses.filter((item) => item === 'Check').length == 10) {
-				$('.quantity').css('left', '54.1%')
+				$('.quantity').css('left', '59.8%')
 			}
+
+			localStorage.removeItem('responses')
+			localStorage.removeItem('selecteds')
 		</script>
 	</body>
 </html>

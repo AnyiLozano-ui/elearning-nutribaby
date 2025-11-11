@@ -27,6 +27,9 @@ const addControlsToMove = () => {
 						$(`.cuadro${i + 1}`).fadeOut()
 						$(`.hm${i + 1}`).fadeIn()
 						handleValidateIsCorrect(i)
+						const sound = document.getElementById('sonido-clic')
+						sound.currentTime = 0
+						sound.play()
 					}
 				}
 			})
@@ -59,16 +62,19 @@ const handleValidateIsCorrect = (index) => {
 			setTimeout(() => redirectToQuestions(), 2000)
 		}
 
-		if (!(data.tuple === selection[0] && data.card === selection[1]) && !(data.card === selection[0] && data.tuple === selection[1])) {
-            setTimeout(() => {
-                for (let i = 0; i < selection.length; i++) {
-                    $(`.cuadro${selection[i] + 1}`).fadeIn()
-                    $(`.hm${selection[i] + 1}`).fadeOut()
-                }
+		if (
+			!(data.tuple === selection[0] && data.card === selection[1]) &&
+			!(data.card === selection[0] && data.tuple === selection[1])
+		) {
+			setTimeout(() => {
+				for (let i = 0; i < selection.length; i++) {
+					$(`.cuadro${selection[i] + 1}`).fadeIn()
+					$(`.hm${selection[i] + 1}`).fadeOut()
+				}
 
-                selection = []
-            }, 1000)
-        }
+				selection = []
+			}, 1000)
+		}
 	}
 }
 

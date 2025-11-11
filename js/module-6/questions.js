@@ -38,15 +38,16 @@ const initQuestion = () => {
 
 const addControls = () => {
 	$('.buenas').on('click', () => handleCorrect())
-	$('.resp-mal').on('click', () => handleIncorrect())
-	$('.resp-mal2').on('click', () => handleIncorrect())
-	$('.resp-mal3').on('click', () => handleIncorrect())
+	$('.resp-mal').on('click', () => { $('.resp-mal').css('background', "#ff00004f"); handleIncorrect() })
+	$('.resp-mal2').on('click', () => { $('.resp-mal2').css('background', "#ff00004f"); handleIncorrect() })
+	$('.resp-mal3').on('click', () => { $('.resp-mal3').css('background', "#ff00004f"); handleIncorrect() })
 }
 
 const handleCorrect = () => {
 	const response = JSON.parse(localStorage.getItem('responses'))
 	localStorage.setItem('responses', JSON.stringify([...response, 'Check']))
 	$('.respuesta').fadeIn()
+	$('.buenas').css('background', "#00800047")
 	const sound = document.getElementById('correcto')
 	sound.currentTime = 0
 	sound.play()
@@ -56,6 +57,7 @@ const handleIncorrect = () => {
 	const response = JSON.parse(localStorage.getItem('responses'))
 	localStorage.setItem('responses', JSON.stringify([...response, 'Fail']))
 	$('.mala').fadeIn()
+	$('.mala')
     const sound = document.getElementById('error')
 	sound.currentTime = 0
 	sound.play()
