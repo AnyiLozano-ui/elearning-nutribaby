@@ -1,0 +1,270 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: hsl(0, 0%, 5%);
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+html {
+	background: hsl(192.5deg 66.67% 92.94% / 47%);
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.ancho {
+	position: relative !important;
+	width: 100vw;
+	height: calc((10 / 20) * 112vw);
+	left: calc(50% - 50vw);
+	top: calc(50% - (((10 / 20) * 110vw) / 2));
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+	.ancho {
+		top: calc(50% - (((10 / 16) * 91vw) / 2));
+	}
+}
+
+.alto {
+	width: calc((20 / 10) * 88vh);
+	height: 100vh;
+	top: calc(50% - 50vh);
+	left: calc(50% - (((20 / 10) * 88vh) / 2));
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #ffffff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.abs {
+	position: absolute;
+}
+
+.back {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.portada {
+	position: absolute;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-image: url(https://eml.com.co/elearning_nutri_baby/portada90.jpg);
+}
+
+/* preguntas 1 - 10 */
+.pregunta1 {
+	position: absolute;
+	width: 85.9%;
+	left: 4.8%;
+	top: 20.1%;
+}
+
+.pregunta1 img {
+	width: 100%;
+	height: 100%;
+}	
+
+.pregunta2 {
+	position: absolute;
+	width: 85.9%;
+	left: 4.8%;
+	top: 20.1%;
+}
+
+.pregunta2 img {
+	width: 100%;
+	height: 100%;
+}	
+
+.pregunta3 {
+	position: absolute;
+	width: 85.9%;
+	left: 4.8%;
+	top: 20.1%;
+}
+
+.pregunta3 img {
+	width: 100%;
+	height: 100%;
+}	
+
+.pregunta4 {
+	position: absolute;
+	width: 85.9%;
+	left: 4.8%;
+	top: 20.1%;
+}
+
+.pregunta4 img {
+	width: 100%;
+	height: 100%;
+}	
+
+.pregunta5 {
+	position: absolute;
+	width: 85.9%;
+	left: 4.8%;
+	top: 20.1%;
+}
+
+.pregunta5 img {
+	width: 100%;
+	height: 100%;
+}	
+
+.pregunta6 {
+	position: absolute;
+	width: 85.9%;
+	left: 4.8%;
+	top: 20.1%;
+}
+
+.pregunta6 img {
+	width: 100%;
+	height: 100%;
+}	
+
+.pregunta7 {
+	position: absolute;
+	width: 85.9%;
+	left: 4.8%;
+	top: 20.1%;
+}
+
+.pregunta7 img {
+	width: 100%;
+	height: 100%;
+}	
+
+.pregunta8 {
+	position: absolute;
+	width: 85.9%;
+	left: 4.8%;
+	top: 20.1%;
+}
+
+.pregunta8 img {
+	width: 100%;
+	height: 100%;
+}	
+
+.pregunta9 {
+	position: absolute;
+	width: 85.9%;
+	left: 4.8%;
+	top: 20.1%;
+}
+
+.pregunta9 img {
+	width: 100%;
+	height: 100%;
+}
+
+.pregunta10 {
+	position: absolute;
+	width: 85.9%;
+	left: 4.8%;
+	top: 20.1%;
+}
+
+.pregunta10 img {
+	width: 100%;
+	height: 100%;
+}
+
+/* preguntas malas */
+.resp-mal {
+	position: absolute;
+	width: 86%;
+	height: 9.4%;
+	left: 4.8%;
+	top: 42.6%;
+	background: #ff000059;
+	border-radius: 16px;
+}
+
+.resp-mal2 {
+	position: absolute;
+	width: 86%;
+	height: 9.4%;
+	left: 4.8%;
+	top: 65.3%;
+	background: #ff000059;
+	border-radius: 16px;
+}
+
+.resp-mal3 {
+	position: absolute;
+	width: 86%;
+	height: 9.4%;
+	left: 4.8%;
+	top: 77.3%;
+	background: #ff000059;
+	border-radius: 16px;
+}
+
+/* preguntas buenas */
+.buenas {
+	position: absolute;
+	width: 86%;
+	height: 9.4%;
+	left: 4.8%;
+	top: 54%;
+	background: #46afaf6e;
+	border-radius: 16px;
+}
+
+/* Modal bien  */
+.respuesta {
+	position: absolute;
+	width: 60%;
+	left: 37.2%;
+	top: 3%;
+}
+
+.respuesta img {
+	width: 100%;
+	height: 100%;
+}
+
+/* Modal mala  */
+.mala {
+	position: absolute;
+	width: 60%;
+	left: 37.2%;
+	top: 3%;
+}
+
+.mala img {
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+}
+
+.mobile {
+	height: 100dvh;
+	align-items: center;
+}
+
+.mobile-container {
+	position: relative;
+}

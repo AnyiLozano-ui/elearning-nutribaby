@@ -166,6 +166,66 @@ const menu = [
 		label: 'Evaluación interactiva: módulo 5',
 		link: '/Nutribabay-63.html',
 	},
+
+	{
+		label: 'Módulo 6. Componentes bioactivos diferenciales',
+		children: [
+			{
+				label: '6.1. Oligosacáridos de la leche humana',
+				children: [
+					{
+						label: 'HMO: carbohidratos únicos de la leche humana',
+						link: '/Nutribabay-76.html',
+					},
+					{
+						label: 'HMO en la leche materna y en las fórmulas infantiles',
+						link: '/Nutribabay-77.html',
+					},
+					{
+						label: 'HMO y microbiota: beneficios para el equilibrio intestinal',
+						link: '/Nutribabay-78.html',
+					},
+					{
+						label: 'Los HMO contra la adhesión de patógenos',
+						link: '/Nutribabay-79.html',
+					},
+					{
+						label: 'Los HMO y su función inmunomoduladora',
+						link: '/Nutribabay-80.html',
+					},
+					{
+						label: 'Los HMO y el neurodesarrollo infantil',
+						link: '/Nutribabay-81.html',
+					},
+				],
+			},
+			{
+				label: '6.2. Membrana del glóbulo de grasa láctea',
+				children: [
+					{
+						label: 'MFGM: la membrana invisible de la leche materna',
+						link: '/Nutribabay-83.html',
+					},
+					{
+						label: 'Cómo la MFGM impulsa el desarrollo del cerebro del bebé',
+						link: '/Nutribabay-84.html',
+					},
+					{
+						label: 'La MFGM y sus efectos en el metabolismo infantil',
+						link: '/Nutribabay-85.html',
+					},
+					{
+						label: 'MFGM y salud intestinal del lactante',
+						link: '/Nutribabay-86.html',
+					},
+					{
+						label: 'MFGM: apoyo inmunológico para el lactante',
+						link: '/Nutribabay-87.html',
+					},
+				],
+			},
+		],
+	},
 ]
 
 let active = null

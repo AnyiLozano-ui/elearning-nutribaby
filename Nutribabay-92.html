@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<meta name="viewport" content="initial-scale = 1, user-scalable = no" />
+		<link rel="stylesheet" href="./css/style92.css" />
+		<link rel="stylesheet" href="./css/menu.css" />
+		<link rel="stylesheet" href="./css/loader.css" />
+		<title>E-Learning Nutri Baby</title>
+	</head>
+
+	<body class="ancho">
+		<div class="loader">
+			<img src="https://eml.com.co/elearning_nutri_baby/loader.png" alt="" />
+		</div>
+		<div id="container">
+			<div class="abs back portada"></div>
+
+			<div class="titulo">
+				<img
+					src="https://eml.com.co/elearning_nutri_baby/intentalo-m6.png"
+					alt="" />
+			</div>
+
+			<!-- menu -->
+			<a href="./Nutribabay-88.html" class="boton"> </a>
+
+			<!-- Audio -->
+			<audio id="sonido-clic">
+				<source src="https://eml.com.co/elearning_nutri_baby/button.mp3" type="audio/mpeg" />
+			</audio>
+
+			<!-- imagenes animadas -->
+			<div class="nube">
+				<img src="https://eml.com.co/elearning_nutri_baby/nube3.png" alt="" />
+			</div>
+
+			<div class="hondas">
+				<img src="https://eml.com.co/elearning_nutri_baby/hondarosada.png" alt="ondas" />
+			</div>
+
+			<!-- animacion personaje -->
+			<div class="personaje">
+				<img src="https://eml.com.co/elearning_nutri_baby/triste.png" alt="" />
+			</div>
+
+		</div>
+
+		<script src="https://eml.com.co/Ayuda_visual_Gamabenceno/js/jquery.min.js"></script>
+		<script src="https://eml.com.co/Ayuda_visual_Gamabenceno/js/jquery-3.2.1.min.js"></script>
+		<script src="./js/menu.js"></script>
+		<script src="./js/loader.js"></script>
+		<script src="https://eml.com.co/Ayuda_visual_Gamabenceno/js/script.js"></script>
+
+		<!-- Script Sonido-->
+		<script>
+			const enlace = document.querySelector('.boton')
+			const sonido = document.getElementById('sonido-clic')
+
+			enlace.addEventListener('click', function (event) {
+				event.preventDefault()
+				sonido.currentTime = 0
+				sonido.play()
+
+				// Espera un poco antes de redirigir
+				setTimeout(() => {
+					window.location.href = enlace.href
+				}, 800)
+			})
+
+			const responses = JSON.parse(localStorage.getItem('responses'))
+			$('.quantity').text(
+				responses.filter((item) => item === 'Check').length
+			)
+
+			localStorage.removeItem('responses')
+			localStorage.removeItem('selecteds')
+		</script>
+	</body>
+</html>

@@ -1,0 +1,787 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: hsl(0, 0%, 5%);
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+html {
+	background: hsl(192.5deg 66.67% 92.94% / 47%);
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.ancho {
+	position: relative !important;
+	width: 100vw;
+	height: calc((10 / 20) * 112vw);
+	left: calc(50% - 50vw);
+	top: calc(50% - (((10 / 20) * 110vw) / 2));
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+	.ancho {
+		top: calc(50% - (((10 / 16) * 91vw) / 2));
+	}
+}
+
+.alto {
+	width: calc((20 / 10) * 88vh);
+	height: 100vh;
+	top: calc(50% - 50vh);
+	left: calc(50% - (((20 / 10) * 88vh) / 2));
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #ffffff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.abs {
+	position: absolute;
+}
+
+.back {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.portada {
+	position: absolute;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-image: url(https://eml.com.co/elearning_nutri_baby/portada1.jpg);
+}
+
+.titulo {
+	position: absolute;
+	width: 93%;
+	left: 0%;
+	top: 14.9%;
+}
+
+.titulo img {
+	width: 100%;
+	height: 100%;
+}
+
+.btn1 {
+	position: absolute;
+	width: 7%;
+	height: 10%;
+	right: 1.5%;
+	top: 87%;
+	cursor: pointer;
+	z-index: 10;
+}
+
+/* Animacion nube  */
+.nube {
+	position: absolute;
+	width: 100%;
+	left: 0%;
+	top: 0%;
+	z-index: 100;
+	animation: ondas 3s ease-in-out infinite;
+}
+
+@keyframes ondas {
+	0%,
+	100% {
+		transform: skewX(0deg);
+	}
+	50% {
+		transform: skewX(3deg);
+	}
+}
+
+.nube img {
+	width: 100%;
+	height: 100%;
+}
+/* Animacion nube  */
+
+/* animacion hondas */
+.hondas {
+	position: absolute;
+	width: 100%;
+	right: -0.1%;
+	top: 93%;
+	overflow: hidden;
+	z-index: 100;
+}
+
+.hondas img {
+	width: 110%; /* un poquito más ancha para evitar espacios blancos */
+	height: 100%;
+	display: block;
+	animation: gentleSide 12s ease-in-out infinite;
+}
+
+/* Movimiento suave de lado a lado */
+@keyframes gentleSide {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(
+			-5%
+		); /* se mueve solo un poquito a la izquierda */
+	}
+}
+/* animacion hondas */
+
+/* animacion bnoton */
+.boton {
+	position: absolute;
+	width: 24.3%;
+	right: 1.7%;
+	top: 75.4%;
+	z-index: 100;
+	cursor: pointer;
+}
+
+.boton img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	animation: breathe 3s ease-in-out infinite;
+	cursor: pointer;
+}
+
+/* Halo expansivo */
+.boton::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.2);
+	filter: blur(12px);
+	transform: scale(0.9);
+	animation: halo 3s ease-in-out infinite;
+	z-index: -1;
+}
+
+@keyframes breathe {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.07);
+	}
+}
+
+@keyframes halo {
+	0%,
+	100% {
+		transform: scale(0.9);
+		opacity: 0.3;
+	}
+	50% {
+		transform: scale(1.2);
+		opacity: 0.6;
+	}
+}
+/* animacion bnoton */
+
+/* personaje */
+.personaje {
+	position: absolute;
+	width: 46%;
+	right: -2.8%;
+	top: 9%;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.personaje img {
+	width: 100%;
+	height: 100%;
+	animation: respirar 3s ease-in-out infinite, pataleo 2s ease-in-out infinite;
+	transform-origin: center bottom;
+}
+
+@keyframes respirar {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.04);
+	}
+}
+
+@keyframes pataleo {
+	0%,
+	100% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(2deg);
+	}
+}
+
+/* hamburgue */
+.hamburguesa {
+	position: absolute;
+	width: 8%;
+	left: 2%;
+	top: 3%;
+}
+
+.hamburguesa img {
+	width: 100%;
+	height: 100%;
+}
+/* hamburgue */
+
+@media screen and (max-width: 500px) {
+}
+
+.mobile {
+	height: 100dvh;
+	align-items: center;
+}
+
+.mobile-container {
+	position: relative;
+}
+
+/* cuadros girados */
+.cuadro1 {
+	position: absolute;
+	width: 13.7%;
+	left: 13.5%;
+	top: 2.5%;
+	z-index: 100;
+}
+
+.cuadro1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro2 {
+	position: absolute;
+	width: 13.7%;
+	left: 28.8%;
+	top: 2.5%;
+	z-index: 100;
+}
+
+.cuadro2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro3 {
+	position: absolute;
+	width: 13.7%;
+	left: 43.8%;
+	top: 2.5%;
+	z-index: 100;
+}
+
+.cuadro3 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro4 {
+	position: absolute;
+	width: 13.7%;
+	left: 59.1%;
+	top: 2.5%;
+	z-index: 100;
+}
+
+.cuadro4 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro5 {
+	position: absolute;
+	width: 13.7%;
+	left: 74.1%;
+	top: 2.5%;
+	z-index: 100;
+}
+
+.cuadro5 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro6 {
+	position: absolute;
+	width: 13.7%;
+	left: 13.6%;
+	top: 26.5%;
+	z-index: 100;
+}
+
+.cuadro6 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro7 {
+	position: absolute;
+	width: 13.7%;
+	left: 28.7%;
+	top: 26.5%;
+	z-index: 100;
+}
+
+.cuadro7 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro8 {
+	position: absolute;
+	width: 13.7%;
+	left: 43.8%;
+	top: 26.5%;
+	z-index: 100;
+}
+
+.cuadro8 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro9 {
+	position: absolute;
+	width: 13.7%;
+	left: 59%;
+	top: 26.5%;
+	z-index: 100;
+}
+
+.cuadro9 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro10 {
+	position: absolute;
+	width: 13.7%;
+	left: 74.1%;
+	top: 26.5%;
+	z-index: 100;
+}
+
+.cuadro10 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro11 {
+	position: absolute;
+	width: 13.7%;
+	left: 13.6%;
+	top: 50.9%;
+	z-index: 100;
+}
+
+.cuadro11 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro12 {
+	position: absolute;
+	width: 13.7%;
+	left: 28.8%;
+	top: 50.9%;
+	z-index: 100;
+}
+
+.cuadro12 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro13 {
+	position: absolute;
+	width: 13.7%;
+	left: 43.8%;
+	top: 50.9%;
+	z-index: 100;
+}
+
+.cuadro13 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro14 {
+	position: absolute;
+	width: 13.7%;
+	left: 59%;
+	top: 50.9%;
+	z-index: 100;
+}
+
+.cuadro14 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro15 {
+	position: absolute;
+	width: 13.7%;
+	left: 74.1%;
+	top: 50.9%;
+	z-index: 100;
+}
+
+.cuadro15 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro16 {
+	position: absolute;
+	width: 13.7%;
+	left: 13.6%;
+    top: 75.7%;
+	z-index: 100;
+}
+
+.cuadro16 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro17 {
+	position: absolute;
+	width: 13.7%;
+	left: 28.8%;
+    top: 75.7%;
+	z-index: 100;
+}
+
+.cuadro17 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro18 {
+	position: absolute;
+	width: 13.7%;
+	left: 43.9%;
+    top: 75.7%;
+	z-index: 100;
+}
+
+.cuadro18 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro19 {
+	position: absolute;
+	width: 13.7%;
+	left: 59%;
+    top: 75.7%;
+	z-index: 100;
+}
+
+.cuadro19 img {
+	width: 100%;
+	height: 100%;
+}
+
+.cuadro20 {
+	position: absolute;
+	width: 13.7%;
+	left: 74.2%;
+    top: 75.7%;
+	z-index: 100;
+}
+
+.cuadro20 img {
+	width: 100%;
+	height: 100%;
+}
+
+/* cuadros iamgnes */
+.hm1 {
+	position: absolute;
+	width: 13.7%;
+	left: 13.5%;
+	top: 2.5%;
+	z-index: 100;
+}
+
+.hm1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm2 {
+	position: absolute;
+	width: 13.7%;
+	left: 28.8%;
+	top: 2.5%;
+	z-index: 100;
+}
+
+.hm2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm3 {
+	position: absolute;
+	width: 13.7%;
+	left: 43.8%;
+	top: 2.5%;
+	z-index: 100;
+}
+
+.hm3 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm4 {
+	position: absolute;
+	width: 13.7%;
+	left: 59.1%;
+	top: 2.5%;
+	z-index: 100;
+}
+
+.hm4 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm5 {
+	position: absolute;
+	width: 13.7%;
+	left: 74.1%;
+	top: 2.5%;
+	z-index: 100;
+}
+
+.hm5 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm6 {
+	position: absolute;
+	width: 13.7%;
+	left: 13.6%;
+	top: 26.5%;
+	z-index: 100;
+}
+
+.hm6 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm7 {
+	position: absolute;
+	width: 13.7%;
+	left: 28.7%;
+	top: 26.5%;
+	z-index: 100;
+}
+
+.hm7 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm8 {
+	position: absolute;
+	width: 13.7%;
+	left: 43.8%;
+	top: 26.5%;
+	z-index: 100;
+}
+
+.hm8 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm9 {
+	position: absolute;
+	width: 13.7%;
+	left: 59%;
+	top: 26.5%;
+	z-index: 100;
+}
+
+.hm9 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm10 {
+	position: absolute;
+	width: 13.7%;
+	left: 74.1%;
+	top: 26.5%;
+	z-index: 100;
+}
+
+.hm10 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm11 {
+	position: absolute;
+	width: 13.7%;
+	left: 13.6%;
+	top: 50.9%;
+	z-index: 100;
+}
+
+.hm11 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm12 {
+	position: absolute;
+	width: 13.7%;
+	left: 28.8%;
+	top: 50.9%;
+	z-index: 100;
+}
+
+.hm12 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm13 {
+	position: absolute;
+	width: 13.7%;
+	left: 43.8%;
+	top: 50.9%;
+	z-index: 100;
+}
+
+.hm13 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm14 {
+	position: absolute;
+	width: 13.7%;
+	left: 59%;
+	top: 50.9%;
+	z-index: 100;
+}
+
+.hm14 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm15 {
+	position: absolute;
+	width: 13.7%;
+	left: 74.1%;
+	top: 50.9%;
+	z-index: 100;
+}
+
+.hm15 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm16 {
+	position: absolute;
+	width: 13.7%;
+	left: 13.6%;
+    top: 75.7%;
+	z-index: 100;
+}
+
+.hm16 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm17 {
+	position: absolute;
+	width: 13.7%;
+	left: 28.8%;
+    top: 75.7%;
+	z-index: 100;
+}
+
+.hm17 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm18 {
+	position: absolute;
+	width: 13.7%;
+	left: 43.9%;
+    top: 75.7%;
+	z-index: 100;
+}
+
+.hm18 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm19 {
+	position: absolute;
+	width: 13.7%;
+	left: 59%;
+    top: 75.7%;
+	z-index: 100;
+}
+
+.hm19 img {
+	width: 100%;
+	height: 100%;
+}
+
+.hm20 {
+	position: absolute;
+	width: 13.7%;
+	left: 74.2%;
+    top: 75.7%;
+	z-index: 100;
+}
+
+.hm20 img {
+	width: 100%;
+	height: 100%;
+}
