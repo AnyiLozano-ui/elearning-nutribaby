@@ -231,6 +231,20 @@ const menu = [
 		label: 'Evaluación interactiva: módulo 6',
 		link: '/Nutribabay-88.html',
 	},
+
+		{
+		label: 'Módulo 7. Nutribaby®: portafolio y diferenciadores',
+		children: [
+			{
+				label: 'Nutribaby® 1, 2 y 3: definición, indicaciones y beneficios',
+				link: '/Nutribabay-94.html',
+			},
+			{
+				label: 'La importancia de la osmolaridad en las fórmulas infantiles',
+				link: '/Nutribabay-95.html',
+			},
+		],
+	},
 ]
 
 let active = null
