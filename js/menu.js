@@ -263,7 +263,7 @@ const menu = [
 
 	{
 		label: 'Cierre del curso',
-		link: '/index.html',
+		link: '/Nutribabay-107.html',
 	},
 ]
 
