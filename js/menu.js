@@ -232,7 +232,7 @@ const menu = [
 		link: '/Nutribabay-88.html',
 	},
 
-		{
+	{
 		label: 'Módulo 7. Nutribaby®: portafolio y diferenciadores',
 		children: [
 			{
@@ -244,6 +244,26 @@ const menu = [
 				link: '/Nutribabay-95.html',
 			},
 		],
+	},
+
+	{
+		label: 'Módulo 8. Preparación y manipulación de las fórmulas',
+		children: [
+			{
+				label: 'Nutribaby®: guía práctica de preparación',
+				link: '/Nutribabay-97.html',
+			},
+		],
+	},
+
+	{
+		label: 'Evaluación interactiva: módulo 7 y 8',
+		link: '/Nutribabay-98.html',
+	},
+
+	{
+		label: 'Cierre del curso',
+		link: '/index.html',
 	},
 ]
 
